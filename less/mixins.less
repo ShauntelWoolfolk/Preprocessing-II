@@ -1,1 +1,17 @@
-// Mixins in here
+.flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-layout(@jc, @ai) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+  }
+
+  .spacing(@m, @p) {
+    margin: @m;
+    padding: @p;
+  }
+

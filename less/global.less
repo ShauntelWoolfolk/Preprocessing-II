@@ -43,4 +43,14 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  
+}
+body {
+  @media @mobile {
+    flex-direction: column;
+  } 
+
+  @media @tablet {
+    .flex-layout(center, center);
+  }
 }
