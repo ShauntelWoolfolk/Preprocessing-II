@@ -1,31 +1,24 @@
 header {
-
+    
+    .flex();
+    .flex-layout(space-evenly, center);
+    flex-wrap: nowrap;
+    
     border: dashed @navigation-border;
-    
-    #home {
-
-        p {
-            .flex-layout(flex-start,space-around);
-            padding-top: 10px;
-
-        }
-    
-    }
-
+}
 nav {
     .flex();
     .flex-layout(flex-end, center);
     font-size: @nav-font;
-    padding: 30px;
+    
     
 
     a { 
-      .spacing(.2%, .5%);
-      text-align: center;
-      padding-right: 60px;
+      .spacing(5%, 10%);
       color: @shark;
+      
     }
 }
-}
+
 
 

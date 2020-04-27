@@ -4,11 +4,25 @@
 
 html {
   font-size: 62.5%;
+  
 }
 
 html, body {
   font-family: 'Roboto', sans-serif;
 }
+
+body {
+  @media @mobile {
+    .flex();
+    flex-direction: row;
+  } 
+
+  @media @tablet {
+    .flex();
+    .flex-layout(center, center);
+  }
+}
+
 
 h1, h2, h3, h4, h5 {
   font-family: 'Indie Flower', cursive;
@@ -44,13 +58,4 @@ img {
   width: 100%;
   margin: 0 auto;
   
-}
-body {
-  @media @mobile {
-    flex-direction: column;
-  } 
-
-  @media @tablet {
-    .flex-layout(center, center);
-  }
 }
