@@ -2,11 +2,27 @@
   width: 100%;
   border-top: 2px dashed silver;
   background: @sandy-beach;
-  
+
   p {
     text-align: center;
     color: @font-color;
     font-size: 1.6rem;
     padding: 20px;
+  }
+}
+.btn {
+  border: solid blue;
+  border-radius: 5px;
+  background-color: rgb(118, 118, 226);
+  padding: 15px;
+
+  @media @mobile {
+    .flex();
+    flex-direction: column;
+  } 
+
+  @media @tablet {
+    .flex();
+    .flex-layout(center, center);
   }
 }
